@@ -31,6 +31,7 @@ time, mark, audio, video {
 
 body {
   line-height:1;
+  margin: 0;
 }
 
 article,aside,details,figcaption,figure,
@@ -164,6 +165,8 @@ a {
   color: white;
 }
 
+
+/*ファーストビュー*/
 .first_view_container {
   padding: 50px 50px 30px;
   max-width: 1140px;
@@ -209,4 +212,46 @@ a {
 .first_view_note {
   color: #a2a2a4;
   font-size: 12px;
+}
+
+/*POTEPAN CANPとは*/
+.about-wrapper {
+  background-color: #f79214;
+  padding: 44px 0;
+}
+.about-container {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.about-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 38px;
+}
+.about-text h3 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+.about-text p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 16px;
+}
+.about-btn {
+  display: flex;
+  align-items: center;
+}
+.about-btn p {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  
+}
+.about-btn {
+  color: white;
 }
