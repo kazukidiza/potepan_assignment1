@@ -276,7 +276,7 @@ video {
   .header_logo {
     height: 15px;
     width: auto;
-}
+  }
   .header-navi {
     overflow-y: scroll;
     position: fixed;
@@ -316,7 +316,22 @@ video {
   }
   .HeaderNavHamburger__line:last-child {
     top: 100%;
-}
+  }
+  .HeaderNavList {
+      overflow-y: scroll;
+      position: fixed;
+      top: 60px;
+      left: 100%;
+      width: 100%;
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 75px;
+      transition: transform .5s;
+      z-index: 99;
+      background-color: rgba(0,0,0,.8);
+      -webkit-overflow-scrolling: touch;
+      height: 100%;
+  }
   .background-img-pc {
     background: none;
   }
@@ -337,18 +352,21 @@ video {
   }
 }
  
+ 
 @media screen and (max-width: 767px ) {
+.first_view_images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+  }
  .first_view_container {
    padding: 0 20px;
    display: block;
- }
- .first_view_contents {
-   margin: 0;
-   padding: 0:
- }
+  }
  .first_view_contents h1 {
    font-size: 38px;
- }
+  }
   #first_view_btn_2 {
     display: none;
   }
