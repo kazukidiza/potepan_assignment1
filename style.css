@@ -1,229 +1,169 @@
-/*リセットCSS*/
-
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+body, div, p, ul, ol, li, dl, dt, dd, table, th, td, img, figure, h1, h2, h3, h4, h5, h6, form, select {
+    margin: 0;
+    padding: 0;
 }
-
-body {
-  line-height:1;
-  margin: 0;
+*, *:before, *:after {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-  display:block;
-}
-
-nav ul {
-  list-style:none;
-}
-
-blockquote, q {
-  quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content:'';
-  content:none;
-}
-
-a {
-  margin:0;
-  padding:0;
-  vertical-align:baseline;
-  background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color:#ff9;
-  color:#000;
-  text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color:#ff9;
-  color:#000; 
-  font-style:italic;
-  font-weight:bold;
-}
-
-del {
-  text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-  border-bottom:1px dotted;
-  cursor:help;
-}
-
-table {
-  border-collapse:collapse;
-  border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-  display:block;
-  height:1px;
-  border:0;   
-  border-top:1px solid #cccccc;
-  margin:1em 0;
-  padding:0;
-}
-
-input, select {
-  vertical-align:middle;
-}
-
-
-
-/*共通*/
+user agent stylesheet
 li {
-  list-style:none
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul, ol {
+    list-style: none;
+}
+user agent stylesheet
+ul {
+    list-style-type: disc;
 }
 a {
   text-decoration: none;
   color: black;
 }
-a:hover {
-  opacity: 0.8;
+body {
+    color: #333;
+    font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
-.background-img-pc {
+body {
+    -webkit-font-smoothing: antialiased;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+}
+*, *:before, *:after {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    word-break: break-all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*ヘッダー共通*/
+.header {
+  padding: 20px 0;
+  width: 100%;
+}
+.header-container {
+  margin: 0 36px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+/*ヘッダーロゴ*/
+.header-logo {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+/*ヘッダーナビ共通*/
+.menu-pc {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+}
+.menu-item {
+  margin-right: 45px;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+.menu-item span {
+  display: block;
+}
+.menu-item span:last-child {
+  font-size: 10px;
+}
+.menu-btn {
+background-color: #f79214;
+color: white;
+border-radius: 38px;
+display: flex;
+text-align: center;
+align-items: center;
+height: 40px;
+padding: 0 20px;
+font-size: 12px;
+}
+
+/*トップ*/
+
+.background-pc {
   background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
   background-size: cover;
   background-position: center;
 }
-
-/*ヘッダー*/
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  margin: 0 36px;
-  height: 40px;
+.top-wrapper {
+  padding-bottom: 40px;
 }
-.header_logo {
-  height: 20px;
-  width: auto;
-}
-.HeaderNavHamburger_mark {
-  display: none;
-}
-.header-navi {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-}
-.header-navi-item {
-  margin-right: 45px;
-  line-height: 15px;
-}
-.header-navi p {
-  text-align: center;
-  font-size: 10px;
-  font-weight: 500;
-}
-.header-navi span {
-  font-weight: 600;
-  font-size: 14px;
-}
-.header-btn a {
-  display: flex;
-  align-items: center;
-  background-color: #f79214;
-  padding: 0 20px;
-  height: 40px;
-  border-radius: 38px;
-}
-.header-btn p {
-  font-size: 12px;
-  font-weight: 600;
-  color: white;
-}
-
-
-/*ファーストビュー*/
-.background-img-sp {
-  display: none;
-}
-.first_view_container {
-  padding: 50px 50px 30px;
+.top-container {
   max-width: 1140px;
+  padding: 0 50px;
   margin: 0 auto;
 }
-.first_view_contents {
+.top-contents {
   width: fit-content;
   margin-bottom: 70px;
 }
-.first_view_contents h1 {
+.top-contents h1 {
   font-size: 38px;
-  font-weight: 700;
+  font-family: 'Lato',sans-serif;
+  line-height: 54px;
+  margin-bottom: 16px;
   text-align: center;
-  margin-bottom: 15px;
-  line-height: 50px;
 }
-.first_view_images {
-  text-align: center;
-  display: flex;
+.top-imgs {
   margin-bottom: 25px;
-}
-.first_view_images img {
-  margin-right: 8px;
-}
-.first_view_btns {
+  width: 100%;
   display: flex;
 }
-.first_view_btns a {
-  display: block;
-  
-  padding: 20px 30px;
+.top-imgs img {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.top-imgs-big {
+  width: 40%;
+}
+.top-imgs img:last-child {
+  margin-right: 0;
+}
+.top-btns {
+  display: flex;
+}
+.top-btns a {
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 38px;
+  padding: 20px 0;
+  display: block;
+  text-align: center;
 }
-.first_view_btn_1 {
-  background-color: #f79214;
-  margin-right: 15px;
+.top-btns a:first-child {
   color: white;
+  background-color: #f79214;
+  width: 306px;
+  margin-right: 15px;
 }
-.first_view_btn_2 {
+.top-btns a:last-child {
+  color: black;
   background-color: white;
-  border: 1px solid #e0e0e0;;
-}
-.first_view_note {
-  color: #a2a2a4;
-  font-size: 12px;
+  border: 1px solid #e0e0e0;
+  width: 176px;
 }
 
-/*POTEPAN CANPとは*/
+/*potepanについて*/
 .about-wrapper {
   background-color: #f79214;
   padding: 44px 0;
@@ -272,78 +212,113 @@ video {
   color: white;
 }
 
-@media screen and (max-width: 1080px ) {
-  .header_logo {
-    height: 15px;
-    width: auto;
+
+/*fixed-footer*/
+.fixed-footer {
+  width: 100%;
+}
+.fixed-footer img {
+  max-width: 367px;
+  width: 100%;
+  position: fixed;
+  z-index: 8;
+  bottom: 40px;
+  right: 0;
+}
+
+
+/*pc*/
+@media screen and (min-width: 1080px) {
+  .menu-sp {
+    display: none;
   }
-  .header-navi {
-    overflow-y: scroll;
+  .hamburger {
+    display: none;
+  }
+  .background-sp {
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+}
+/*横幅タブレット以下*/
+@media screen and (max-width: 1080px) {
+  .background-pc {
+     background: none;
+  }
+  .top-wrapper {
+    padding-top: 73px;
+    background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  .header {
     position: fixed;
-    top: 60px;
-    left: 100%;
-    width: 100%;
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 75px;
-    transition: transform .5s;
-    z-index: 99;
-    background-color: rgba(0,0,0,.8);
-    -webkit-overflow-scrolling: touch;
-    height: 100%;
+    z-index: 10;
+    background-color: white;
   }
-  .HeaderNavHamburger_mark {
-    cursor: pointer;
+  .line {
     display: block;
-    position: relative;
     width: 30px;
-    height: 21px;
-    z-index: 100;
-  }
-  .HeaderNavHamburger__line {
-    position: absolute;
-    top: 50%;
-    display: block;
-    width: 100%;
     height: 3px;
-    background-color: #333;
-    transform: translate(0,-50%);
-    border-radius: 10px;
-    transition: top .2s,transform .2s,opacity .3s;
-  } 
-  .HeaderNavHamburger__line:first-child {
-    top: 0;
+    margin: 6px;
+    background-color: black;
   }
-  .HeaderNavHamburger__line:last-child {
-    top: 100%;
+  .hamburger {
+    cursor: pointer;
   }
-  .HeaderNavList {
-      overflow-y: scroll;
-      position: fixed;
-      top: 60px;
-      left: 100%;
-      width: 100%;
-      display: block;
-      padding-top: 20px;
-      padding-bottom: 75px;
-      transition: transform .5s;
-      z-index: 99;
-      background-color: rgba(0,0,0,.8);
-      -webkit-overflow-scrolling: touch;
-      height: 100%;
+  .menu-sp {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    padding-top: 60px;
+    transform: translateX(100%);
+    transition: .5s ease-in-out;
   }
-  .background-img-pc {
-    background: none;
+  
+  #check:checked ~ .menu-sp {
+    transform: translateX(0%);
+    transition: .5s ease-in-out;
   }
-  .first_view_contents {
-    padding-top: 40px;
+   #check:checked ~ .fixed-footer {
+     display: none;
+   }
+  .menu-item {
+  margin-right: 0;
+  text-align: center;
   }
-  .background-img-tablet {
-  background-image: url("https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg");
-  background-size: cover;
-  background-position: center;
+  .menu-link {
+    display: block;
+    padding: 20px 0;
   }
-  .about-container {
+  .menu-item span:first-child {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .menu-item span:last-child {
+    color: #f79214;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .menu-btn {
+    font-size: 16px;
+    margin: 30px auto;
+    width: fit-content;
+    padding: 30px 50px;
+    font-weight: 700;
+    display: flex;
+  }
+  .menu-pc {
+    display: none;
+  }
+  .background-sp {
+    display: none;
+  }
+   .about-container {
     flex-direction: column;
   }
   video {
@@ -351,29 +326,52 @@ video {
     margin-bottom: 16px;
   }
 }
- 
- 
-@media screen and (max-width: 767px ) {
-.first_view_images {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-  width: 100%;
+/*横幅スマホ以下*/
+@media screen and (max-width: 767px) {
+  .header-logo {
+    height: 16px;
   }
- .first_view_container {
-   padding: 0 20px;
-   display: block;
-  }
- .first_view_contents h1 {
-   font-size: 38px;
-  }
-  #first_view_btn_2 {
-    display: none;
-  }
-  .background-img-tablet {
+  .top-wrapper {
     background: none;
+    width: 100%;
   }
-  .background-img-sp {
+  .background-sp {
+    display: block;
+    margin-top: 51px;
+    width: 100%;
+  }
+  .top-container {
+    margin-top: -45vw;
+    padding: 0 20px;
+    width: 100%;
+  }
+  .top-contents {
+    width: 100%;
+  }
+  .top-contents h1 {
+    font-size: 25px;
+    line-height: 36px;
+    width: 100%;
+  }
+  .top-imgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .top-imgs img:first-child {
+    width: 27%;
+  }
+   .top-imgs img:last-child {
+    width: 27%;
+  }
+  .top-imgs-big {
+    width: 40%;
+  }
+  .top-btns a:last-child {
+    display: none;
+    width: 100%;
+  }
+  .top-btns a:first-child {
     display: block;
     width: 100%;
   }
