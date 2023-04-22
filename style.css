@@ -49,8 +49,12 @@ html {
     box-sizing: border-box;
 }
 
-
-/*ヘッダー共通*/
+/*共通*/
+a:hover {
+  opacity: 0.8;
+  
+}
+/*ヘッダー*/
 .header {
   padding: 20px 0;
   width: 100%;
